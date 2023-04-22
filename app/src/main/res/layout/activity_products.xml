@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductsActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutproducts"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/productsbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bigshot_one"
+                android:gravity="center"
+                android:textColor="#5193C8"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtTitleproduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="3"
+                android:fontFamily="@font/bigshot_one"
+                android:gravity="center"
+                android:textColor="#5193C8"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#5193C8"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/txtbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/productsbg"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgproduct"-->
+<!--            android:layout_width="@dimen/_250sdp"-->
+<!--            android:layout_height="@dimen/_250sdp"-->
+<!--            android:layout_gravity="center" />-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_gravity="center"
+            android:id="@+id/viewpager"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#5193C8"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:text="$"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp" />
+
+            <TextView
+                android:textColor="#5193C8"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:text="discount %"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ratingbg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtdiscountPercentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ratingbg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#5193C8"
+            android:id="@+id/txtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/productsbg"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5193C8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/txtrating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <View
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/txtstock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <View
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/txtcategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <TextView-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:padding="@dimen/_10sdp"-->
+<!--        android:id="@+id/txtTitleproduct"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/bigshot_one"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="@dimen/_20ssp" />-->
+
+</LinearLayout>
